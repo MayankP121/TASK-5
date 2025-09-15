@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuickNotes App</title>
+  <link rel="stylesheet" href="task5.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝QuickNotes</h1>
+    <div class="note-form">
+      <input type="text" id="noteTitle" placeholder="Note Title" required>
+      <textarea id="noteContent" rows="4" placeholder="Write your note here..." required></textarea>
+      <button onclick="addNote()">Add Note</button>
+    </div>
+    <div id="notesContainer" class="notes-grid">
+    </div>
+  </div>
+  <script src="task5.js"></script>
+</body>
+</html>

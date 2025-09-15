@@ -1,0 +1,86 @@
+:root {
+  --primary: #4f46e5;
+  --accent: #7c3aed;
+  --bg: #f3f4f6;
+  --card: #ffffff;
+  --danger: #ef4444;
+  --text: #1f2937;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+h1 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 25px;
+}
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+.note-form input, .note-form textarea {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+.note-form button {
+  background-color: var(--primary);
+  color: white;
+  padding: 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.note-form button:hover {
+  background-color: var(--accent);
+}
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.note {
+  background-color: #fefefe;
+  border-left: 4px solid var(--primary);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  position: relative;
+}
+.note h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: var(--primary);
+}
+.note p {
+  font-size: 14px;
+  color: #374151;
+}
+.delete-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: var(--danger);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
